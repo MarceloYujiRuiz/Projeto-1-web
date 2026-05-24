@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro e Login</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-logo">
+            <i class="material-icons-outlined">eco</i>
+            <span>Fome Zero</span>
+        </div>
+        <p class="header-sub">Juntos por um mundo sem fome</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="index.html#sobre">Sobre o ODS 2</a>
+        <a href="index.html#metas">Metas</a>
+        <a href="index.html#dados">Realidade</a>
+        <a href="index.html#acoes">O que fazer</a>
+        <a href="index.html#parceiros">Parceiros</a>
+        <a href="cadastro.html" class="cadast">Cadastre-se</a>
+    </nav>
+
+    <main>
+        <div class="grid-formularios">
+
+            <section id="cadastro">
+                <h1>
+                    <i class="material-icons-outlined">person_add</i>
+                    Criar uma Conta
+                </h1>
+
+                <p class="desc-form">
+                    Junte-se à nossa comunidade e contribua com o combate à fome no Brasil.
+                    Preencha os campos abaixo para criar sua conta:
+                </p>
+
+                <form action="cadastro.html#login">
+
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome"
+                        placeholder="Digite seu nome completo" required>
+
+                    <label for="email-cad">E-mail:</label>
+                    <input type="email" id="email-cad" name="email-cad"
+                        placeholder="seuemail@exemplo.com" required>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone"
+                        placeholder="(00) 00000-0000" required>
+
+                    <label for="nascimento">Data de nascimento:</label>
+                    <input type="date" id="nascimento" name="nascimento" required>
+
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade"
+                        placeholder="Sua cidade" required>
+
+                    <label for="contribuicao">Como deseja contribuir com o ODS 2:</label>
+                    <select id="contribuicao" name="contribuicao">
+                        <option value="voluntario">Voluntariado</option>
+                        <option value="doacao">Doação de alimentos</option>
+                        <option value="divulgacao">Divulgação e conscientização</option>
+                        <option value="pesquisa">Pesquisa e desenvolvimento</option>
+                    </select>
+
+                    <label for="mensagem">Por que você quer participar:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" cols="40"
+                        placeholder="Conte um pouco sobre sua motivação..."></textarea>
+
+                    <label for="senha-cad">Senha:</label>
+                    <input type="password" id="senha-cad" name="senha-cad"
+                        placeholder="Crie uma senha segura" required>
+
+                    <input type="submit" value="Criar conta e ir para o Login" class="btn-submit">
+
+                </form>
+
+                <p class="retorno">Já tem uma conta? <a href="#login">Faça login aqui</a></p>
+            </section>
+
+            <section id="login">
+                <h2>
+                    <i class="material-icons-outlined">login</i>
+                    Já tenho uma conta
+                </h2>
+
+                <p class="desc-form">
+                    Insira seu e-mail e senha para acessar sua conta e contribuir com o ODS 2:
+                </p>
+
+                <form action="index.html">
+
+                    <label for="email-login">E-mail:</label>
+                    <input type="email" id="email-login" name="email-login"
+                        placeholder="seuemail@exemplo.com" required>
+
+                    <label for="senha-login">Senha:</label>
+                    <input type="password" id="senha-login" name="senha-login"
+                        placeholder="Digite sua senha" required>
+
+                    <input type="submit" value="Entrar" class="btn-submit">
+
+                </form>
+
+                <p class="retorno">
+                    Esqueceu sua senha?
+                    <a href="mailto:marceloyuji@alunos.utfpr.edu.br">Entre em contato</a>
+                </p>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="coluna">
+                <p>
+                    <i class="material-icons-outlined">eco</i>
+                    <strong>Fome Zero — ODS 2</strong>
+                </p>
+                <p>Projeto desenvolvido para a disciplina de<br>
+                Programação Web Front-End — UTFPR 2026</p>
+            </div>
+
+            <div class="coluna">
+                <p>
+                    <p>
+                    <i class="material-icons-outlined">mail</i>
+                    Contato:<br>
+                    <a href="mailto:marceloyuji@alunos.utfpr.edu.br">
+                    marceloyuji@alunos.utfpr.edu.br</a>
+                    <br>
+                    <a href="mailto:mariajuliasouza@alunos.utfpr.edu.br">
+                      mariajuliasouza@alunos.utfpr.edu.br</a>
+                </p>
+            </div>
+
+            <div class="coluna">
+                <p>Currículos dos integrantes:</p>
+                <p>
+                    <a href="https://marceloyujiruiz.github.io/Programa-o-Web-Front-End/" target="_blank">Curriculo Marcelo Yuji</a> |
+                    <a href="https://majupedroso.github.io/curriculum-vitae/" target="_blank">Curriculo Maria Julia</a> |
+                </p>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html> 
